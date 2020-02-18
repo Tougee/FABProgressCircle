@@ -34,12 +34,10 @@ android {
 }
 
 dependencies {
-  compile 'com.github.jorgecastilloprz:fabprogresscircle:1.01@aar'
-  compile parent.ext.libAppCompat
-  compile parent.ext.libSupportDesign
-  compile parent.ext.libPicasso
-  //  compile parent.ext.libFabMakovkastar
-  //  compile parent.ext.libFabFutureSimple
+  implementation project(path: ':library')
+  implementation parent.ext.libAppCompat
+  implementation parent.ext.libSupportDesign
+  implementation parent.ext.libPicasso
 }
 
 task checkstyle(type: Checkstyle) {
@@ -50,5 +48,3 @@ task checkstyle(type: Checkstyle) {
 
   classpath = files()
 }
-
-apply from: '../maven_push.gradle'

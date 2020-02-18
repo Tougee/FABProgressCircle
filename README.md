@@ -1,3 +1,19 @@
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	     implementation 'com.github.tougee:FABProgressCircle:1.1'
+	}
+
+-----------------
+
 FABProgressCircle
 -----------------
 [![Build Status](https://travis-ci.org/JorgeCastilloPrz/FABProgressCircle.svg?branch=master)](https://travis-ci.org/JorgeCastilloPrz/FABProgressCircle) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-FABProgressCircle-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1942)

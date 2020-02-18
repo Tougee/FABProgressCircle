@@ -1,9 +1,10 @@
 buildscript {
   repositories {
     jcenter()
+    google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:1.2.3'
+    classpath 'com.android.tools.build:gradle:3.5.3'
   }
 }
 
@@ -28,8 +29,8 @@ allprojects {
     androidMinSdkVersion = 11
     androidTargetSdkVersion = 22
     androidApplicationId = 'com.github.jorgecastilloprz.fabprogresscircle'
-    androidVersionCode = 3
-    androidVersionName = '1.01'
+    androidVersionCode = 4
+    androidVersionName = '1.1'
 
     // Libraries
     libAppCompat = 'com.android.support:appcompat-v7:22.0.0'
@@ -46,6 +47,7 @@ allprojects {
 
   repositories {
     jcenter()
+    google()
   }
 }
 
